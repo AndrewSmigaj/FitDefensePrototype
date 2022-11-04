@@ -42,7 +42,7 @@ public class BezierCurveTest : MonoBehaviour
 
         for(int i = 1; i <= num_segments; i++)
         {
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.06f);
 
             float t = i / (float)num_segments;
             Vector3 nextPos = CalculateQuadraticBezierPoint(t, controlPoints[0].position, controlPoints[1].position, controlPoints[2].position);

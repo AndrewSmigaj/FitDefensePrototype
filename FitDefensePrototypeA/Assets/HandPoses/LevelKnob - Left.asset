@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: LevelKnob - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.0017549498, y: 0.018211802, z: 0.028667929}
+    rotation: {x: -0.5069517, y: -0.16327004, z: 0.7083558, w: 0.46322304}
+  index:
+    position: {x: 0.0019487459, y: -0.009018086, z: 0.058168046}
+    rotation: {x: 0.18599679, y: -0.6803459, z: 0.6089577, w: 0.36291283}
+  middle:
+    position: {x: 0.0012996439, y: -0.030300003, z: 0.05689989}
+    rotation: {x: 0.3618686, y: -0.6828893, z: 0.54904217, w: 0.31822425}
+  ring:
+    position: {x: -0.0051000025, y: -0.039799895, z: 0.040299904}
+    rotation: {x: 0.038870875, y: -0.79790175, z: 0.58079314, w: 0.15659414}
+  pinky:
+    position: {x: -0.014199993, y: -0.051399767, z: 0.030699495}
+    rotation: {x: 0.019664764, y: -0.8517778, z: 0.51906574, w: 0.06825935}

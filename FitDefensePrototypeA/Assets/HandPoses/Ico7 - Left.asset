@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Ico7 - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.0736572, y: -0.002609109, z: 0.022200396}
+    rotation: {x: -0.5674806, y: 0.12951547, z: 0.7173619, w: 0.3828626}
+  index:
+    position: {x: -0.019343002, y: -0.0056091254, z: 0.053600315}
+    rotation: {x: 0.047662355, y: -0.7036995, z: 0.66873956, w: 0.23520842}
+  middle:
+    position: {x: -0.034540772, y: -0.036612056, z: 0.05973495}
+    rotation: {x: -0.32066578, y: -0.7031788, z: 0.5869794, w: -0.24118109}
+  ring:
+    position: {x: -0.033677146, y: -0.06385485, z: 0.040764514}
+    rotation: {x: -0.2967459, y: -0.7705495, z: 0.48748216, w: -0.28382546}
+  pinky:
+    position: {x: -0.027070532, y: -0.08166126, z: 0.017205002}
+    rotation: {x: -0.28820404, y: -0.80560046, z: 0.37009475, w: -0.36190692}

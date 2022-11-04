@@ -83,7 +83,7 @@ public class AudioProcessing : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.5f);
             GetNextSampleAndVisualize();
         }
 
@@ -93,7 +93,7 @@ public class AudioProcessing : MonoBehaviour
 
     void GetNextSampleAndVisualize()
     {
-        Debug.Log("Entered gettting sample");
+       // Debug.Log("Entered gettting sample");
         float[] spectrum = new float[256];
 
         AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
@@ -158,7 +158,7 @@ public class AudioProcessing : MonoBehaviour
         }
         //Debug.DrawLine(new Vector3(3, 0, 0), new Vector3(3, highAvg, 0), Color.cyan);
 
-        Debug.Log((lowAvg, lowMidAvg));
+       // Debug.Log((lowAvg, lowMidAvg));
 
 
     }

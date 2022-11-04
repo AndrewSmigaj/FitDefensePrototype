@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: IcospherePose - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.010400017, y: 0.013100327, z: 0.010500397}
+    rotation: {x: -0.52753943, y: 0.073207885, z: 0.8392642, w: 0.10944719}
+  index:
+    position: {x: 0.008750037, y: 0.0016003883, z: 0.046800487}
+    rotation: {x: -0.14683115, y: -0.689859, z: 0.7075847, w: 0.04312}
+  middle:
+    position: {x: -0.006249895, y: -0.008499588, z: 0.045300335}
+    rotation: {x: -0.052023396, y: -0.7527422, z: 0.6311131, w: 0.17991495}
+  ring:
+    position: {x: -0.007999978, y: -0.023249617, z: 0.04630041}
+    rotation: {x: -0.054606467, y: -0.82390696, z: 0.54976606, w: -0.1263055}
+  pinky:
+    position: {x: -0.009549934, y: -0.031849753, z: 0.03310028}
+    rotation: {x: -0.1622649, y: -0.8400737, z: 0.42085406, w: -0.3013777}
