@@ -30,7 +30,7 @@ public class MissileIsHitBehavior : MonoBehaviour
         {
             alreadyHit = true;
             Instantiate(explosion, this.transform.position, this.transform.rotation);
-            Destroy(this);
+            Destroy(this.transform.parent.gameObject);
         }
 
     }

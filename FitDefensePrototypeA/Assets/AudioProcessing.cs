@@ -83,7 +83,7 @@ public class AudioProcessing : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             GetNextSampleAndVisualize();
         }
 
@@ -112,7 +112,7 @@ public class AudioProcessing : MonoBehaviour
         lowAvg = lowAvg * 10;
         if(lowAvg > missileThreshold)
         {
-            musicEvent?.Invoke(0);
+// musicEvent?.Invoke(0);
         }
 
 
@@ -127,7 +127,7 @@ public class AudioProcessing : MonoBehaviour
 
         if (lowMidAvg > missileThreshold)
         {
-            musicEvent?.Invoke(1);
+        //    musicEvent?.Invoke(1);
         }
 
 
@@ -141,7 +141,7 @@ public class AudioProcessing : MonoBehaviour
         midAvg = midAvg * 10;
         if (midAvg > missileThreshold)
         {
-            musicEvent?.Invoke(2);
+          //  musicEvent?.Invoke(2);
         }
 
         //Debug.DrawLine(new Vector3(2, 0, 0), new Vector3(2, midAvg, 0), Color.green);
@@ -154,11 +154,31 @@ public class AudioProcessing : MonoBehaviour
         highAvg = highAvg * 10;
         if (highAvg > missileThreshold)
         {
+        //    musicEvent?.Invoke(3);
+        }
+
+
+        //hack until I decided what I want to do, probably use a dictionary and enum
+
+        if(((lowAvg > lowMidAvg) && (lowAvg > midAvg)) || ((lowAvg > lowMidAvg) && (lowAvg > highAvg)) || ((lowAvg > midAvg) && (lowAvg > highAvg)))
+        {
+            musicEvent?.Invoke(0);
+        }
+        if (((lowMidAvg > lowAvg) && (lowMidAvg > midAvg)) || ((lowMidAvg > lowAvg) && (lowMidAvg > highAvg)) || ((lowMidAvg > midAvg) && (lowMidAvg > highAvg)))
+        {
+            musicEvent?.Invoke(1);
+        }
+        if (((midAvg > lowMidAvg) && (midAvg > lowAvg)) || ((midAvg > lowMidAvg) && (midAvg > highAvg)) || ((midAvg > lowAvg) && (midAvg > highAvg)))
+        {
+            musicEvent?.Invoke(2);
+        }
+        if (((highAvg > lowMidAvg) && (highAvg > midAvg)) || ((highAvg > lowMidAvg) && (highAvg > lowAvg)) || ((highAvg > midAvg) && (highAvg > lowAvg)))
+        {
             musicEvent?.Invoke(3);
         }
         //Debug.DrawLine(new Vector3(3, 0, 0), new Vector3(3, highAvg, 0), Color.cyan);
 
-       // Debug.Log((lowAvg, lowMidAvg));
+        // Debug.Log((lowAvg, lowMidAvg));
 
 
     }

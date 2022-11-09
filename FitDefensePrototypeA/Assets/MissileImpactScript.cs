@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MissileImpactScript : MonoBehaviour
 {
+
+    public GameObject explosionPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,10 @@ public class MissileImpactScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Instantiate(explosionPrefab, transform.position, transform.rotation);
     }
 }

@@ -43,6 +43,7 @@ Material:
   - TransparentBackface
   - MOTIONVECTORS
   - DepthOnly
+  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -321,7 +322,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.4186988, g: 0.71653605, b: 0.9150943, a: 0.078431375}
-    - _Color: {r: 0.35457453, g: 0.68348557, b: 0.9056604, a: 0.27450982}
+    - _Color: {r: 0.41869876, g: 0.71653605, b: 0.9150943, a: 0.078431375}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
